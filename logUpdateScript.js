@@ -1,4 +1,4 @@
-f (window.location.pathname === "/slog") {
+if (window.location.pathname === "/slog") {
 	
 	chrome.runtime.onMessage.addListener(
 		function(request, sender, sendResponse) {
