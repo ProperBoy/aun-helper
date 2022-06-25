@@ -502,7 +502,7 @@
 	}
 
 	function updateCityStatus() {
-		fetch('https://aun.kr/tprint', Headers)
+		fetch('https://aun.kr/tprints', Headers)
 			.then(response => {
 				if (!response.ok) {
 					console.error("Request Failed. status = ", response.status)
