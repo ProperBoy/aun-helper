@@ -259,7 +259,7 @@ function injectHttpRequestScript() {
 }
 
 function requestGameLog() {
-	$.get("/logservice_xs.php", function(data) {
+	$.get("/logservice_xsx.php", function(data) {
 		sendLogMessage(data);
 		getLoggingConfig(function(logConfig) {
 			parseLogMessage(data, logConfig);
@@ -335,7 +335,7 @@ function makeLogControls() {
 }
 
 $(document).ready(function() {
-	if (window.location.pathname !== "/slog") {
+	if (window.location.pathname !== "/slogs") {
 		return;
 	}
 	
