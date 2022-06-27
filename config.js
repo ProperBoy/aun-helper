@@ -439,7 +439,7 @@
 
 	function updateGuildStatus() {
 		try {
-			fetch('https://aun.kr/guild')
+			fetch('https://aun.kr/guilds')
 				.then((response) => {
 					if (!response.ok) {
 						console.error("Request Failed. status = ", response.status)
